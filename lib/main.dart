@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'Employee Task Management',
         debugShowCheckedModeBanner: false,
-        theme: AppTheme.darkTheme, // Default to dark theme for the new look
+        theme: AppTheme.darkTheme,
         darkTheme: AppTheme.darkTheme,
         themeMode: ThemeMode.dark,
         home: const AuthWrapper(),

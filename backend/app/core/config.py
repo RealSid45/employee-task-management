@@ -7,7 +7,7 @@ class Settings:
     PROJECT_NAME: str = "Employee Task Management"
     SECRET_KEY: str = os.getenv("SECRET_KEY", "your-secret-key-change-this")
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7 # 1 week
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 10080
 
     MYSQL_USER: str = os.getenv("MYSQL_USER", "root")
     MYSQL_PASSWORD: str = os.getenv("MYSQL_PASSWORD", "")

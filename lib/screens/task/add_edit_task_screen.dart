@@ -60,7 +60,7 @@ class _AddEditTaskScreenState extends State<AddEditTaskScreen> {
             backgroundColor: const Color(0xFFFF5252),
             behavior: SnackBarBehavior.floating,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
-            content: const Text('Failed to save task. Please try again.'),
+            content: const Text('Failed to save task'),
           ),
         );
       }

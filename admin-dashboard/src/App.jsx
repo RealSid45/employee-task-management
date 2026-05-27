@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Users, CheckSquare, Trash2, Edit } from 'lucide-react';
 
-const API_BASE_URL = 'http://localhost:8000'; // Update with Render URL later
+const API_BASE_URL = 'http://localhost:8000';
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -10,19 +10,13 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // In a real app, we'd need admin auth. This is a bonus demo.
     fetchData();
   }, []);
 
   const fetchData = async () => {
     try {
-      // Mocking admin access or using specific admin endpoints if implemented
-      // For now, we'll assume the API allows fetching all if admin
-      // const tasksRes = await axios.get(`${API_BASE_URL}/admin/tasks`);
-      // setTasks(tasksRes.data);
       setLoading(false);
     } catch (error) {
-      console.error("Error fetching data", error);
       setLoading(false);
     }
   };
